@@ -1,0 +1,56 @@
+/*------------------------------------*\
+  #SETĂRI
+\*------------------------------------*/
+
+/**
+ * 1. Un model box-sizing mai rezonabil.
+ *
+ * 2. Această regulă modifică valoarea base font-size,
+ * cu care sunt comparate toate unitățile rem.
+ *
+ * 3. Normalize.css setează un top și bottom margin pentru aceste elemente.
+ * care ar interfera cu layout-ul nostru astfel că o suprascriem cu această regulă.
+ *
+ * 4. Trasăm un bottom-margin general principalelor elemente de tipografie
+ * care asigură uniformitatea tuturor marginilor orizontale în mod implicit
+ * în întregul site. Ulterior, în unele cazuri, le putem suprascrie.
+ */
+
+ *    { box-sizing: border-box;} /* [1] */
+
+
+ html { font-size:  14px; } /* [2] */
+ 
+ 
+ h2, h6,
+ p,
+ ul {
+   margin: 0; /* [3] */
+ }
+ 
+ 
+ h2, h6 {
+   margin-bottom: 1.6666vh; /* [4] */
+ }
+ 
+ 
+ a {
+   text-decoration:  none;
+   cursor:           pointer;
+ }
+ 
+ 
+ 
+ 
+ 
+ /*------------------------------------*\
+   #TIPOGRAFIE
+ \*------------------------------------*/
+ 
+ body {
+   color:        #211138;
+   font-family:  'Montserrat', sans-serif;
+ }
+ 
+ 
+ h2 { font-size: 4.4444vh; }
